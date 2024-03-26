@@ -158,27 +158,27 @@
                     </div>
                 </div>
 
-                <div class="bar"><i class="fa-brands fa-css3-alt" style="color: #147bbc;"></i>    
+                <div class="bar"><i class="fa-brands fa-java" style="color: #147bbc;"></i>   
                     <div class="info">
-                        <span>CSS</span>
+                        <span>Advanced Java</span>
                     </div>
                     <div class="progress-line css">
                         <span></span>
                     </div>
                 </div>
 
-                <div class="bar"><i class="fa-brands fa-js" style="color: #b0bc1e;"></i>
+                <div class="bar"><i class="fa-solid fa-database" style="color: #b0bc1e;"></i> 
                     <div class="info">
-                        <span>JavaScript</span>
+                        <span>MySQL</span>
                     </div>
                     <div class="progress-line JavaScript">
                         <span></span>
                     </div>
                 </div>
                 
-                <div class="bar"><i class="fa-brands fa-react" style="color: #69bcbc;"></i>
+                <div class="bar"><i class="fa-brands fa-php" style="color: #69bcbc;"></i> 
                     <div class="info">
-                        <span>ReactJS</span>
+                        <span>PHP</span>
                     </div>
                     <div class="progress-line ReactJS">
                         <span></span>
@@ -277,9 +277,11 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section  id="contact">
+        <h2>Contact <span>Me</span></h2>
+        <div class="contact"> 
         <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
+            
             <h4>Let's work Together</h4>
             <p>Let's collaborate to bring your digital vision to life and make a lasting impact in the digital world.</p>
 
@@ -296,16 +298,44 @@
             </div>
         </div>
 
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="tel" placeholder="Enter Your Contact No" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
-                <input type="submit" value="Send Message" class="send">
+        <div class="contact">
+           
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                        <div class="error-txt">Full Name can't be blank</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                        <div class="error-txt email">Email Address can't be blank</div>
+                    </div>
+                </div>
+    
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="tel" placeholder="Contact Number" id="phone" class="item" autocomplete="off">
+                        <div class="error-txt">Contact Number can't be blank</div>
+                    </div>
+    
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be blank</div>
+                    </div>
+                </div>
+    
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+                </div>
+    
+                <button type="submit">Send Message</button>
             </form>
         </div>
+    
+    
+    </div>
     </section>
         
         <div class="last-text">
@@ -314,5 +344,8 @@
         <a href="#home" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
     <script src="main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>
